@@ -4,6 +4,10 @@
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -217,6 +221,55 @@
         .footer a {
             color: #000
         }
+
+        input {
+            outline: none;
+            margin: 0;
+            border: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            font-size: 14px;
+            font-family: inherit;
+            line-height: 50px;
+            background: #fafafa;
+            -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+
+        .inputcontainer {
+            position: relative;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .form-submit {
+            display: inline-block;
+            background: #800080;
+            color: white;
+            border-bottom: none;
+            width: auto;
+            font-weight: bold;
+            padding: 15px 39px;
+            border-radius: 5px;
+            border: 3px solid #800080;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+
+        .form-submit:hover {
+            background-color: white;
+            color: #800080;
+        }
     </style>
 
 </head>
@@ -266,6 +319,9 @@
                                 <p><a href="#" class="btn btn-outline">Join Us</a></p>-->
                         </div>
                         <div class="col-lg-6 offset-lg-1">
+
+
+                            <!-- NGP intake
                             <link rel='preload' href='https://d3rse9xjbp8270.cloudfront.net/at.js' as='script'
                                 crossorigin='anonymous'>
                             <link rel='preload' href='https://d3rse9xjbp8270.cloudfront.net/at.min.css' as='style'>
@@ -275,12 +331,50 @@
                                 data-form-url="https://actions.ngpvan.com/v1/Forms/UjwRRZCo-kKXUgEk7xdHkg2"
                                 data-fastaction-endpoint="https://fastaction.ngpvan.com" data-inline-errors="true"
                                 data-fastaction-nologin="true" data-databag-endpoint="https://profile.ngpvan.com"
-                                data-databag="everybody" data-mobile-autofocus="false">
+                                data-databag="everybody" data-mobile-autofocus="false"> -->
+
+                            <!-- AirTable intake
+                            <iframe class="airtable-embed"
+                                src="https://airtable.com/embed/shr7hmT3ntrM9cJDw?backgroundColor=purple"
+                                frameborder="0" onmousewheel="" width="100%" height="533"
+                                style="background: transparent; border: 1px solid #ccc;"></iframe>-->
+                            <div style="background-color: white; border-radius: 15px; padding: 5%;">
+                                <form name="submit-to-google-sheet" style="padding-top: 5%;">
+                                    <div class="inputcontainer">
+                                        <input name="first name" type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input name="last name" type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input name="email" type="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input name="zipcode" type="text" placeholder="ZIP Code">
+                                    </div>
+                                    <button type="submit" class="form-submit">Send</button>
+                                </form>
                             </div>
+                            <script>
+                                const scriptURL =
+                                    'https://script.google.com/macros/s/AKfycbybA8jaa9J1jkjCO1rWSb22owlrKTxPuFGvVWPvmLIN1F7IPmsd/exec'
+                                const form = document.forms['submit-to-google-sheet']
+
+                                form.addEventListener('submit', e => {
+                                    e.preventDefault()
+                                    fetch(scriptURL, {
+                                            method: 'POST',
+                                            body: new FormData(form)
+                                        })
+                                        .then(response => console.log('Success!', response))
+                                        .catch(error => console.error('Error!', error.message))
+                                })
+                            </script>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
