@@ -59,7 +59,7 @@
         }
 
         section {
-            overflow: hidden
+            overflow: visible;
         }
 
         .section {
@@ -110,13 +110,7 @@
             position: relative
         }
 
-        .intake-section .wave {
-            width: 100%;
-            overflow: hidden;
-            position: absolute;
-            z-index: 1;
-            bottom: -150px
-        }
+
 
         @media screen and (max-width:992px) {
             .intake-section .wave {
@@ -301,8 +295,10 @@
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li><a href="#learn" class="nav-link">Learn</a></li>
                             <li><a href="mailto:hello@rankedchoiceva.org" class="nav-link">Contact</a></li>
-                            <li><a href="/donate.html" class="nav-link">Donate</a>
+                            <li><a href="donate.html" class="nav-link" style="color: white;">Donate</a>
                             </li>
+                            <li><a href="https://www.twitter.com/rankedchoiceva/" style="color: white;"><i
+                                        class="fab fa-twitter"></i></a></li>
 
                         </ul>
                     </nav>
@@ -406,10 +402,11 @@
                     <h1><strong>Learn More</strong></h2>
                 </div>
             </div>
-            <div class="mr-cols">
+            <div class="mr-cols" style=>
                 <a href="https://www.washingtonpost.com/opinions/its-time-for-maryland-and-virginia-to-embrace-ranked-choice-voting/2019/01/24/df485890-2020-11e9-9145-3f74070bbdb9_story.html"
                     target="_blank">
-                    <div class="press-box">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/WP.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
                         <span class="number">The
                             Washington Post</span>
                         <h3>It’s time for Maryland and Virginia to embrace ranked-choice voting
@@ -438,7 +435,8 @@
 
                 <a href="https://www.virginiamercury.com/blog-va/ranked-choice-voting-may-be-coming-to-local-elections-in-virginia-heres-how-it-works/"
                     target="_blank">
-                    <div class="press-box">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/VM2.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
                         <span class="number">The Virginia Mercury</span>
                         <h3>Ranked-choice voting may be coming to local elections in Virginia. Here’s how it
                             works.
@@ -450,7 +448,8 @@
 
 
                 <a href="https://www.cnbc.com/2019/11/04/the-potential-fix-to-washington.html" target="_blank">
-                    <div class="press-box">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/CNBC.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
                         <span class="number">CNBC</span>
                         <h3>Can Ranked-Choice Voting Save Washington?
                         </h3>
@@ -460,9 +459,10 @@
                 </a>
 
                 <a href="https://www.cnbc.com/2019/11/04/the-potential-fix-to-washington.html" target="_blank">
-                    <div class="press-box">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/CNBC.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
                         <span class="number">CNBC</span>
-                        <h3>Can Ranked-Choice Voting Save Washington?
+                        <h3>Local LTE
                         </h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                             Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -471,9 +471,10 @@
 
 
                 <a href="https://www.cnbc.com/2019/11/04/the-potential-fix-to-washington.html" target="_blank">
-                    <div class="press-box">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/CNBC.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
                         <span class="number">CNBC</span>
-                        <h3>Can Ranked-Choice Voting Save Washington?
+                        <h3>Final Source
                         </h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                             Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
@@ -481,7 +482,6 @@
                 </a>
             </div>
         </div>
-        <div style="margin-top: 3%"></div>
         </div>
 
 
@@ -490,15 +490,16 @@
     </section>
 
 
-    <section style="background-color: #F1615C; position: relative; padding: 5%;">
+    <section style=" background-color: #F1615C; position: relative; padding: 5%;">
         <div class="container" id="donate">
             <div class="row justify-content-center text-center mb-2">
                 <div class="col-md-6 mb-5">
-                    <h1 style="color: white; padding-bottom: 2%;"><strong><a style="color: white;"
-                                href="mailto:hello@rankedchoiceva.org">hello@rankedchoiceva.org</a></strong><br><br>
+                    <h1 style="color: white; padding-bottom: 2%;"><strong>Contact Us</strong></h1>
+                    <h3 style="color: white; padding-bottom: 2%;"><a style="color: white;"
+                            href="mailto:hello@rankedchoiceva.org">hello@rankedchoiceva.org</a><br><br>
                         <a href="https://www.twitter.com/rankedchoiceva/" style="color: white;"><i
                                 class="fab fa-twitter"></i></a>
-                    </h1>
+                    </h3>
 
                 </div>
             </div>
