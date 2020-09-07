@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<script src="https://kit.fontawesome.com/5e9bdfd81d.js" crossorigin="anonymous"></script>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="robots" content="noimageindex, nofollow, nosnippet">
+
+
+    <title>Ranked Choice Virginia – Join us </title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+
+    <link href=" /Users/jake/Downloads/SoftLand/assets/css/style.css" rel="stylesheet">
+
+    <style>
+        html {
+            overflow-x: hidden
+        }
+
+        body {
+            font-family: Roboto, sans-serif;
+            color: #9fa1a4;
+            line-height: 1.5
+        }
+
+        a {
+            color: #777;
+            transition: .3s all ease
+        }
+
+        a:hover {
+            /*color: #000;*/
+            text-decoration: none
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Poppins, sans-serif;
+            color: #000
+        }
+
+        .container {
+            z-index: 2;
+            position: relative
+        }
+
+        section {
+            overflow: visible;
+        }
+
+        .section {
+            padding: 7rem 0
+        }
+
+        .btn {
+            border: none;
+            padding: 15px 30px !important
+        }
+
+        .btn.btn-outline {
+            border: 2px solid white;
+            background: 0 0;
+            color: white;
+        }
+
+        .btn.btn-outline:hover {
+            border: 2px solid #2B3470;
+            background: #2B3470;
+            color: white;
+        }
+
+        .press-box {
+            box-shadow: 5px 10px 30px -5px rgba(0, 0, 0, .8);
+            background: #fff;
+            padding: 40px
+        }
+
+        .press-box .number {
+            background: #2B3470;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            letter-spacing: .2rem;
+            margin-bottom: 10px;
+            display: block
+        }
+
+        .press-box p:last-child {
+            margin-bottom: 0
+        }
+
+
+        .intake-section {
+            /*background: linear-gradient(to top, #CDCDCD, #F1615C);*/
+            background-color: #F1615C;
+            position: relative
+        }
+
+
+
+        @media screen and (max-width:992px) {
+            .intake-section .wave {
+                bottom: -180px
+            }
+        }
+
+        .intake-section .wave svg {
+            width: 100%
+        }
+
+        .intake-section,
+        .intake-section>.container>.row {
+            height: 100vh;
+            min-height: 880px
+        }
+
+        .intake-section h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 30px
+        }
+
+        @media screen and (max-width:992px) {
+            .intake-section h1 {
+                font-size: 2.5rem;
+                text-align: center
+            }
+        }
+
+        @media screen and (max-width:992px) {
+            .intake-section .intake-text-image {
+                margin-top: 4rem
+            }
+        }
+
+        .intake-section p {
+            font-size: 18px;
+            color: #fff
+        }
+
+        .site-navbar {
+            margin-bottom: 0;
+            z-index: 1999;
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .site-navbar .site-logo {
+            position: relative;
+            font-size: 18px
+        }
+
+        .site-navbar .site-logo a {
+            color: #2B3470;
+        }
+
+        .site-navbar .site-logo a:hover {
+            text-decoration: none
+        }
+
+        .site-navbar .site-navigation .site-menu {
+            margin-bottom: 0
+        }
+
+        .site-navbar .site-navigation .site-menu a {
+            text-decoration: none !important;
+            display: inline-block
+        }
+
+        .site-navbar .site-navigation .site-menu>li {
+            display: inline-block
+        }
+
+        .site-navbar .site-navigation .site-menu>li>a {
+            padding: 30px 20px;
+            color: white;
+            display: inline-block;
+            text-decoration: none !important
+        }
+
+        /*
+        .site-navbar .site-navigation .site-menu>li>a:hover {
+            color: #2B3470;
+        }
+        */
+
+        .footer {
+            padding: 5rem 0 2.5rem 0
+        }
+
+        .footer h3 {
+            font-size: 18px;
+            margin-bottom: 30px
+        }
+
+        .footer ul li {
+            margin-bottom: 10px
+        }
+
+        .footer a {
+            color: #000
+        }
+
+        input {
+            outline: none;
+            margin: 0;
+            border: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            font-size: 14px;
+            font-family: inherit;
+            line-height: 50px;
+            background: #fafafa;
+            -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 0 20px;
+            font-size: 16px;
+            color: #666;
+        }
+
+
+        .inputcontainer {
+            position: relative;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .form-submit {
+            display: inline-block;
+            color: #2B3470;
+            font-weight: bold;
+            font-size: 22px;
+            border-bottom: none;
+            width: auto;
+            font-weight: bold;
+            padding: 15px 39px;
+            border-radius: 5px;
+            border: 3px solid #FED766;
+            margin-top: 25px;
+            cursor: pointer;
+
+            background-color: #FED766;
+        }
+
+
+
+        .mr-cols {
+            columns: 3 200px;
+            column-gap: 1.5rem;
+        }
+
+        .mr-cols div {
+            width: 100px;
+            margin: 0 1rem 1rem 0;
+            display: inline-block;
+            width: 100%;
+            font-size: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-lg-2">
+                    <h1 class="mb-0 site-logo"><a href="rcv.html" class="mb-0"><img src="files/logo-v2.png"
+                                style="max-width: 150px;"></a></h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-lg-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                            <li><a href="#learn" class="nav-link">Learn</a></li>
+                            <li><a href="mailto:hello@rankedchoiceva.org" class="nav-link">Contact</a></li>
+                            <li><a href="donate.html" class="nav-link">Donate</a>
+                            </li>
+                            <li><a href="https://www.twitter.com/rankedchoiceva/" style="color: white;"><i
+                                        class="fab fa-twitter"></i></a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="intake-section" id="intake">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 intake-text-image">
+                    <div class="row">
+                        <div class="col-lg-5 text-center text-lg-left">
+                            <h1 style="color: white; font-size: 60px;">more choices<font
+                                    style="color: #2B3470; font-family: Times;">.
+                                </font><br>
+                                more voices<font style="color: #2B3470; font-family: Times;">.</font>
+                            </h1>
+                            <p class="mb-5" style="color: white; font-size: 20px;"><strong
+                                    style="color: #2B3470">Ranked-choice
+                                    voting</strong>
+                                is a small change to ballots that makes a big difference for democracy, and it’s coming
+                                to Virginia. Sign up here to learn how you can help bring ranked-choice voting to a
+                                ballot box near you. </p>
+                            <!--
+                                <p><a href="#" class="btn btn-outline">Join Us</a></p>-->
+                        </div>
+                        <div class="col-lg-6 offset-lg-1">
+
+
+                            <!-- NGP intake
+                            <link rel='preload' href='https://d3rse9xjbp8270.cloudfront.net/at.js' as='script'
+                                crossorigin='anonymous'>
+                            <link rel='preload' href='https://d3rse9xjbp8270.cloudfront.net/at.min.css' as='style'>
+                            <script type='text/javascript' src='https://d3rse9xjbp8270.cloudfront.net/at.js'
+                                crossorigin='anonymous'></script>
+                            <div class="ngp-form"
+                                data-form-url="https://actions.ngpvan.com/v1/Forms/UjwRRZCo-kKXUgEk7xdHkg2"
+                                data-fastaction-endpoint="https://fastaction.ngpvan.com" data-inline-errors="true"
+                                data-fastaction-nologin="true" data-databag-endpoint="https://profile.ngpvan.com"
+                                data-databag="everybody" data-mobile-autofocus="false"> -->
+
+                            <!-- AirTable intake
+                            <iframe class="airtable-embed"
+                                src="https://airtable.com/embed/shr7hmT3ntrM9cJDw?backgroundColor=purple"
+                                frameborder="0" onmousewheel="" width="100%" height="533"
+                                style="background: transparent; border: 1px solid #ccc;"></iframe>-->
+                            <div style="background-color: white; border-radius: 15px; padding: 5%;">
+                                <form name="submit-to-google-sheet" style="padding-top: 5%;">
+                                    <div class="inputcontainer">
+                                        <input name="first name" type="text" placeholder="First Name">
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input name="last name" type="text" placeholder="Last Name">
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input name="email" type="email" placeholder="Email" required>
+                                    </div>
+                                    <div class="inputcontainer">
+                                        <input name="zipcode" type="text" placeholder="ZIP Code">
+                                    </div>
+                                    <center>
+                                        <button type="submit" class="form-submit"
+                                            onclick="window.alert(
+                                        'Thanks for filling out the form! We\'ll be in touch.'); location.reload()">Join</button></center>
+                                </form>
+                            </div>
+                            <script>
+                                const scriptURL =
+                                    'https://script.google.com/macros/s/AKfycbybA8jaa9J1jkjCO1rWSb22owlrKTxPuFGvVWPvmLIN1F7IPmsd/exec'
+                                const form = document.forms['submit-to-google-sheet']
+
+                                form.addEventListener('submit', e => {
+                                    e.preventDefault()
+                                    fetch(scriptURL, {
+                                            method: 'POST',
+                                            body: new FormData(form)
+                                        })
+                                        .then(response => console.log('Success!', response))
+                                        .catch(error => console.error('Error!', error.message))
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section">
+        <style>
+
+        </style>
+
+
+        <div class="container" id="press">
+            <div class="row justify-content-center text-center mb-2">
+                <div class="col-md-6 mb-5">
+                    <h1><strong>Ranked-Choice Voting in the News</strong></h2>
+                </div>
+            </div>
+            <div class="mr-cols" style=>
+                <a href="https://www.washingtonpost.com/opinions/its-time-for-maryland-and-virginia-to-embrace-ranked-choice-voting/2019/01/24/df485890-2020-11e9-9145-3f74070bbdb9_story.html"
+                    target="_blank">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/WP.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
+                        <span class="number">The
+                            Washington Post</span>
+                        <h3>It’s time for Maryland and Virginia to embrace ranked-choice voting
+                        </h3>
+                        <p>Last year, the number of jurisdictions acting to adopt this form of voting more than doubled
+                            as officials came to recognize its advantages in better reflecting the will of voters.
+
+                        </p>
+                    </div>
+                </a>
+
+                <a href="https://www.nytimes.com/2020/02/10/us/politics/ranked-choice-voting.html" target="_blank">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/nytimes.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
+                        <span class="number">The New
+                            York Times</span>
+                        <h3>Why Ranked-Choice Voting Is Having a Moment
+                        </h3>
+                        <p>Vicki Hiatt, the chairwoman of the Kansas Democratic Party, said she expected higher turnout
+                            in this year’s presidential primary in the state. She added that people were happy they
+                            would be able to cast their ballot without strategizing about electability.
+                        </p>
+                    </div>
+                </a>
+
+
+                <a href="https://www.virginiamercury.com/blog-va/ranked-choice-voting-may-be-coming-to-local-elections-in-virginia-heres-how-it-works/"
+                    target="_blank">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/VM2.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
+                        <span class="number">The Virginia Mercury</span>
+                        <h3>Ranked-choice voting may be coming to local elections in Virginia. Here’s how it
+                            works.
+                        </h3>
+                        <p>Supporters of ranked-choice voting say it gives more weight to each individual ballot,
+                            ensures winners have support from a majority of the people they’ll represent and boosts
+                            civility by incentivizing candidates to appeal to a broader set of voters instead of
+                            slinging mud at opponents.</p>
+                    </div>
+                </a>
+
+
+                <a href="https://www.cnbc.com/2019/11/04/the-potential-fix-to-washington.html" target="_blank">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/CNBC.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
+                        <span class="number">CNBC</span>
+                        <h3>Can Ranked-Choice Voting Save Washington?
+                        </h3>
+                        <p>It allows us to have new choices. It allows new players to enter the marketplace of ideas and
+                            be considered and evaluated and voted upon for what they're saying, what they're offering,
+                            rather than the horserace partisan impact of what they might mean for splitting votes.</p>
+                    </div>
+                </a>
+
+                <a href="https://www.fredericksburg.com/opinion/letters_to_editor/letter-ranked-choice-voting-eliminates-playing-the-odds/article_b842d101-f708-5f5a-bc1c-8936c3ea0aad.html"
+                    target="_blank">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/FB.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
+                        <span class="number">Fredericksburg.com</span>
+                        <h3>Ranked choice voting eliminates playing the odds
+                        </h3>
+                        <p>I applaud the Virginia General Assembly and the governor for giving localities the option of
+                            using ranked-choice ballots. Let’s do it!
+                        </p>
+                    </div>
+                </a>
+
+
+                <a href="https://www.politico.com/interactives/2019/how-to-fix-politics-in-america/polarization/ranked-choice-voting/"
+                    target="_blank">
+                    <div class="press-box" style="position: relative;">
+                        <img src="files/Politico.png" style="max-width: 50px; position: absolute; right: 5%; top: 5%;">
+                        <span class="number">Politico Magazine</span>
+                        <h3>How to Fix Polarization: Ranked-Choice Voting
+                        </h3>
+                        <p>We need an electoral system that breaks the current stranglehold of the two-party monopoly,
+                            one that would allow voters to choose between a much more nuanced range of positions than
+                            “extreme” versus “moderate,” would allow third-party candidates to run without being
+                            spoilers and would encourage more civil campaigning and political discourse.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section style=" background-color: #F1615C; position: relative; padding: 5%;">
+        <div class="container" id="donate">
+            <div class="row justify-content-center text-center mb-2">
+                <div class="col-md-6 mb-5">
+                    <h1 style="color: white; padding-bottom: 2%;"><strong>Contact Us</strong></h1>
+                    <h3 style="color: white; padding-bottom: 2%;"><a style="color: white;"
+                            href="mailto:hello@rankedchoiceva.org">hello@rankedchoiceva.org</a><br><br>
+                        <a href="https://www.twitter.com/rankedchoiceva/" style="color: white;"><i
+                                class="fab fa-twitter"></i></a>
+                    </h3>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
